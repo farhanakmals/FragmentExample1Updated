@@ -69,6 +69,10 @@ public class SimpleFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_simple, container, false);
     }
 
+    public static SimpleFragment newInstance(){
+        return new SimpleFragment();
+    }
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
